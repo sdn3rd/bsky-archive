@@ -1,0 +1,132 @@
+# ═══════════════════════════════════════════════════
+# Bluesky Archive — Site Configuration
+# ═══════════════════════════════════════════════════
+#
+# HOW IT WORKS:
+#   - Leave defaults below → demo mode (prompts visitors for a handle)
+#   - Set your actor + site details → your personal archive site
+#
+# Just edit this file and rebuild. That's it.
+# ═══════════════════════════════════════════════════
+
+# ─── Mode ─────────────────────────────────────────
+actor: ""
+
+# ─── Site & SEO ───────────────────────────────────
+site:
+  url: "https://example.com"
+  name: "Bluesky Archive"
+  title: "Bluesky Archive"
+  description: "A beautiful post archive powered by Bluesky."
+  keywords: ""
+  author: ""
+  locale: "en_US"
+  language: "en"
+
+# ─── Social / Attribution ────────────────────────
+social:
+  bluesky: ""
+  twitter: ""
+
+# ─── Icons ────────────────────────────────────────
+icons:
+  favicon: ""
+  favicon_png: ""
+  apple_touch: ""
+
+# ─── Open Graph / Social Cards ───────────────────
+og:
+  image: ""
+  image_width: "1200"
+  image_height: "630"
+  image_alt: ""
+  type: "website"
+
+# ─── Sitemap ──────────────────────────────────────
+sitemap:
+  enabled: true
+  changefreq: "daily"
+  priority: "1.0"
+
+# ─── JSON-LD Structured Data ─────────────────────
+jsonld:
+  enabled: false
+  type: "WebSite"
+  genre: []
+
+# ─── Feed Filters ─────────────────────────────────
+post_tags: []
+reply_tags: []
+excluded_words: []
+
+# ─── Bio ──────────────────────────────────────────
+show_bio: false
+bio_exclude: []
+
+# ─── Theme ────────────────────────────────────────
+theme:
+  background: "#111318"
+
+  text_primary: "rgba(230, 233, 240, 0.92)"
+  text_secondary: "rgba(180, 190, 210, 0.65)"
+  text_accent: "rgba(100, 160, 230, 0.55)"
+  text_muted: "rgba(140, 150, 170, 0.3)"
+
+  card_bg: "rgba(25, 28, 38, 0.55)"
+  card_border: "rgba(100, 130, 180, 0.1)"
+  card_border_hover: "rgba(120, 160, 220, 0.3)"
+  card_glow: "rgba(80, 130, 200, 0.08)"
+  card_accent: "rgba(100, 160, 230, 0.3)"
+
+  accent: "rgba(100, 160, 230, 0.6)"
+  accent_strong: "#4a9ade"
+
+  loading_color: "rgba(180, 200, 230, 0.8)"
+
+# ─── Spotlights (Background) ─────────────────────
+# Blurred colored circles that drift behind the content.
+spotlights:
+  # Blue - top left
+  - color: "rgba(70, 140, 230, 0.16)"
+    size: "55vmax"
+    position: { top: "-10%", left: "-15%" }
+    speed: 22
+    blur: 90
+
+  # Orange - bottom right (large, prominent)
+  - color: "rgba(245, 150, 40, 0.28)"
+    size: "65vmax"
+    position: { bottom: "-10%", right: "-10%" }
+    speed: 24
+    blur: 85
+
+  # Orange - top center (warm wash)
+  - color: "rgba(240, 130, 50, 0.22)"
+    size: "50vmax"
+    position: { top: "-5%", left: "25%" }
+    speed: 28
+    blur: 95
+
+  # Grey - center
+  - color: "rgba(180, 190, 210, 0.10)"
+    size: "45vmax"
+    position: { top: "30%", left: "35%" }
+    speed: 20
+    blur: 110
+
+  # Blue - right
+  - color: "rgba(60, 120, 210, 0.14)"
+    size: "50vmax"
+    position: { top: "5%", right: "0%" }
+    speed: 26
+    blur: 90
+
+  # Orange - left (accent)
+  - color: "rgba(235, 140, 30, 0.18)"
+    size: "40vmax"
+    position: { bottom: "15%", left: "-5%" }
+    speed: 22
+    blur: 80
+
+background_vignette: 0.35
+background_noise: 0.02

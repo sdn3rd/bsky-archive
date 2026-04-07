@@ -1,0 +1,95 @@
+# ═══════════════════════════════════════════════════
+# Example: Poetry Archive Configuration
+# Copy this to config.yaml and customize
+# ═══════════════════════════════════════════════════
+
+actor: "yourhandle.bsky.social"
+
+site:
+  url: "https://yourdomain.com"
+  name: "My Poetry Archive"
+  title: "My Poetry Archive — Verse from Bluesky"
+  description: "A living archive of verse from the Bluesky atmosphere."
+  keywords: "poetry, poems, haiku, verse, vss365, bluesky"
+  author: "Your Name"
+  locale: "en_US"
+  language: "en"
+
+social:
+  bluesky: "yourhandle.bsky.social"
+  twitter: "@yourhandle"
+
+icons:
+  favicon: ""
+  favicon_png: "/icon-512.png"
+  apple_touch: "/icon-512.png"
+
+og:
+  image: "/preview.png"
+  image_width: "1200"
+  image_height: "630"
+  image_alt: "My Poetry Archive"
+  type: "website"
+
+sitemap:
+  enabled: true
+  changefreq: "daily"
+  priority: "1.0"
+
+jsonld:
+  enabled: true
+  type: "CollectionPage"
+  genre: ["Poetry", "Haiku", "Creative Writing"]
+
+post_tags:
+  - "#poetry"
+  - "#vss365"
+
+reply_tags:
+  - "#haikufeels"
+
+excluded_words:
+  - "#poetry"
+  - "#vss365"
+  - "#haikufeels"
+
+show_bio: true
+bio_exclude:
+  - "linktr.ee"
+
+theme:
+  background: "#0a0410"
+  text_primary: "rgba(250, 240, 248, 0.9)"
+  text_secondary: "rgba(250, 240, 248, 0.6)"
+  text_accent: "rgba(235, 120, 160, 0.45)"
+  text_muted: "rgba(230, 210, 220, 0.3)"
+  card_bg: "rgba(16, 6, 22, 0.5)"
+  card_border: "rgba(140, 40, 70, 0.08)"
+  card_border_hover: "rgba(200, 60, 100, 0.25)"
+  card_glow: "rgba(140, 30, 60, 0.1)"
+  card_accent: "rgba(200, 50, 90, 0.3)"
+  accent: "rgba(235, 120, 160, 0.6)"
+  accent_strong: "#d44070"
+  loading_color: "rgba(255, 220, 240, 0.8)"
+
+spotlights:
+  - color: "rgba(100, 20, 160, 0.30)"
+    size: "75vmax"
+    position: { top: "-20%", left: "-20%" }
+    speed: 18
+    blur: 80
+
+  - color: "rgba(180, 25, 50, 0.25)"
+    size: "60vmax"
+    position: { bottom: "-25%", right: "-15%" }
+    speed: 22
+    blur: 90
+
+  - color: "rgba(200, 40, 120, 0.18)"
+    size: "35vmax"
+    position: { top: "15%", left: "30%" }
+    speed: 15
+    blur: 70
+
+background_vignette: 0.6
+background_noise: 0.035
